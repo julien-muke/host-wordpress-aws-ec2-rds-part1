@@ -18,7 +18,7 @@ Learn how setup an RDS instance, establishing a seamless connection between your
 
 The procedure for deploying this architecture on AWS consists of the following steps:
 
-* Create EC2 for WordPress
+* [Create EC2 for WordPress](Create-EC2-for-WordPress)
 * Connect to EC2 instance via Instance connect
 * Connect to EC2 instance via SSH client / local Terminal
 * Install Apache on Amazon Linux 2
@@ -29,3 +29,5 @@ The procedure for deploying this architecture on AWS consists of the following s
 * Create RDS instance for WordPress website
 * Connect RDS and EC2 instance
 * WordPress Installation on Amazon Linux 2 EC2 instance
+
+## <a name="Create-EC2-for-WordPress">➡️ Create EC2 for WordPress</a>
