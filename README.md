@@ -19,16 +19,16 @@ Learn how setup an RDS instance, establishing a seamless connection between your
 The procedure for deploying this architecture on AWS consists of the following steps:
 
 * [Create EC2 for WordPress](Create-EC2-for-WordPress)
-* Connect to EC2 instance via Instance connect
-* Connect to EC2 instance via SSH client / local Terminal
-* Install Apache on Amazon Linux 2
-* Install PHP on Amazon Linux 2
-* Install MariaDB on Amazon Linux 2
-* Download the latest WordPress zip file
-* Database option on AWS for WordPress website
-* Create RDS instance for WordPress website
-* Connect RDS and EC2 instance
-* WordPress Installation on Amazon Linux 2 EC2 instance
+* [Connect to EC2 instance via Instance connect](connect-ec2-to-instance)
+* [Connect to EC2 instance via SSH client / local Terminal](connect-ec2-to-ssh)
+* [Install Apache on Amazon Linux 2](install-apache)
+* [Install PHP on Amazon Linux 2](install-php)
+* [Install MariaDB on Amazon Linux 2](instance-mariadb)
+* [Download the latest WordPress zip file](download-wordpress)
+* [Database option on AWS for WordPress website](wp-database)
+* [Create RDS instance for WordPress website](rds-wp)
+* [Connect RDS and EC2 instance](connect-rds-ec2)
+* [WordPress Installation on Amazon Linux 2 EC2 instance](install-wp-on-ec2)
 
 ## <a name="Create-EC2-for-WordPress">➡️ Create EC2 for WordPress</a>
 
