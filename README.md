@@ -11,7 +11,7 @@ Learn how setup an RDS instance, establishing a seamless connection between your
 ## <a name="design">📐 Architecture Diagram</a>
 
 
-![Blank diagram-19](https://github.com/user-attachments/assets/d596987f-4e9f-4bdf-8ba0-97c148b94f72)
+![Blank diagram-18](https://github.com/user-attachments/assets/7a3bd865-7167-4b54-8628-e3f56a9f31f6)
 
 
 ## <a name="steps">☑️ Steps</a>
@@ -31,3 +31,5 @@ The procedure for deploying this architecture on AWS consists of the following s
 * WordPress Installation on Amazon Linux 2 EC2 instance
 
 ## <a name="Create-EC2-for-WordPress">➡️ Create EC2 for WordPress</a>
+
+
