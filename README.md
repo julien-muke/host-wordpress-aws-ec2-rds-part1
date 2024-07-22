@@ -163,4 +163,25 @@ As you can see below the database is running.
 ![cmd](https://github.com/user-attachments/assets/8cf7ce96-10d0-4db1-b5db-540aedddc3ec)
 
 
+Let's access the home directory `/home/ec2-user`, enter `cd ~` and `pwd` present home directory. 
+
+![home-user](https://github.com/user-attachments/assets/5eeb3865-f573-4ae1-863a-3b28d869dc09)
+
+
+## <a name="download-wordpress">➡️ Step 6 - Download the latest WordPress zip file</a>
+
+Let's download latest WordPress files from  their official website.
+
+By running the following command, you download the latest WordPress package to your current directory. This package can then be extracted and used to set up a WordPress site.
+
+
+```bash
+wget https://wordpress.org/latest.tar.gz
+```
+
+After the wordpress is download, run `ls` to see the wordpress file `latest.tar.gz` then run `tar -xzf latest.tar.gz` to unzip the file, lastly run `ls` to see the WordPress folder with all the necessary WordPress files.
+
+![cmd-3](https://github.com/user-attachments/assets/69b41341-44c0-4cdc-8b52-8d28a7b52ce5)
+
+
 
