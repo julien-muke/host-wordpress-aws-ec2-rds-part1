@@ -39,4 +39,4 @@ To launch an instance:
 1. Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
 2. From the EC2 console dashboard, in the Launch instance pane, choose Launch instance.
 
-<img width="602" alt="1" src="https://github.com/user-attachments/assets/6a4fbf1d-377e-473d-9ee0-448976625bc9">
+![1](https://github.com/user-attachments/assets/6a4fbf1d-377e-473d-9ee0-448976625bc9)
