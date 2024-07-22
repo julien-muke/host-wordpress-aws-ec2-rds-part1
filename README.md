@@ -95,6 +95,22 @@ Note: If you choose Proceed without a key pair (Not recommended), you won't be a
 
 ![aws-command-line](https://github.com/user-attachments/assets/23070b03-c9a6-4b16-ad84-d9097d0a5444)
 
+Note: There is another way to Connect to EC2 instance which is via SSH client, local Terminal to connect to EC2 instance via SSH client.
+
+* Select the instance, and choose Connect button.
+* Choose `SSH client`, copy the SSH command to connect to EC2 instance, and paste it into your terminal.
+
+![ssh](https://github.com/user-attachments/assets/3fd7a268-f55b-4670-afa9-a3953e8d6d26)
+
+* Open your terminal in your computer and paste the SSH command (make you sure your key pair is saved in same folder as your local user in your computer).
+
+* Click `Yes` to continue then click Enter.
+
+![terminal](https://github.com/user-attachments/assets/9db2dd0e-4874-4ff4-9fed-8ed1260da6a2)
+
+
+
+
 
 
 
