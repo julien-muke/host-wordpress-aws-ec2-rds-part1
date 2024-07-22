@@ -18,10 +18,10 @@ Learn how setup an RDS instance, establishing a seamless connection between your
 
 The procedure for deploying this architecture on AWS consists of the following steps:
 
-* [Create EC2 for WordPress](Create-EC2-for-WordPress)
-* [Connect to EC2 instance via Instance connect](connect-ec2-to-instance)
-* [Connect to EC2 instance via SSH client / local Terminal](connect-ec2-to-ssh)
-* [Install Apache on Amazon Linux 2](install-apache)
+* Step 1. [Create EC2 for WordPress](#create-ec2-for-wordpress)
+* Step 2. [Connect to EC2 instance via Instance connect](#connect-ec2-to-instance)
+* Step 3. [Connect to EC2 instance via SSH client (local Terminal)](#connect-ec2-to-ssh)
+* Step 4. [Install Apache on Amazon Linux 2](#install-apache)
 * [Install PHP on Amazon Linux 2](install-php)
 * [Install MariaDB on Amazon Linux 2](instance-mariadb)
 * [Download the latest WordPress zip file](download-wordpress)
@@ -30,7 +30,7 @@ The procedure for deploying this architecture on AWS consists of the following s
 * [Connect RDS and EC2 instance](connect-rds-ec2)
 * [WordPress Installation on Amazon Linux 2 EC2 instance](install-wp-on-ec2)
 
-## <a name="Create-EC2-for-WordPress">➡️ Create EC2 for WordPress</a>
+## <a name="create-ec2-for-wordpress">➡️ Step 1 - Create EC2 for WordPress</a>
 
 You can launch an EC2 instance using the AWS Management Console as described in the following procedure.
 
@@ -81,7 +81,7 @@ Note: If you choose Proceed without a key pair (Not recommended), you won't be a
 ![Screenshot 2024-07-22 at 13 42 19](https://github.com/user-attachments/assets/1c9c495a-62cd-4044-9269-471fb376951e)
 
 
-## <a name="Connect to EC2 instance via Instance connect">➡️ connect-ec2-to-instance</a>
+## <a name="connect-ec2-to-instance">➡️ Step 2 - Connect to EC2 instance via Instance connect</a>
 
 1. After the instance is created and its on the running state, choose instance ID, and click on Connect button. 
 
@@ -95,21 +95,24 @@ Note: If you choose Proceed without a key pair (Not recommended), you won't be a
 
 ![aws-command-line](https://github.com/user-attachments/assets/23070b03-c9a6-4b16-ad84-d9097d0a5444)
 
-Note: There is another way to Connect to EC2 instance which is via SSH client, local Terminal to connect to EC2 instance via SSH client.
+## <a name="connect-ec2-to-ssh">➡️ Step 3 - Connect to EC2 instance via SSH client (local Terminal)</a>
 
-* Select the instance, and choose Connect button.
-* Choose `SSH client`, copy the SSH command to connect to EC2 instance, and paste it into your terminal.
+There is another way to Connect to EC2 instance which is via SSH client, local Terminal to connect to EC2 instance via SSH client.
+
+1. Select the instance, and choose Connect button.
+2. Choose `SSH client`, copy the SSH command to connect to EC2 instance, and paste it into your terminal.
 
 ![ssh](https://github.com/user-attachments/assets/f6b17555-1de0-46ac-bb9b-ae926a941d96)
 
 
-* Open your terminal in your computer and paste the SSH command (make you sure your key pair is saved in same folder as your local user in your computer).
+3. Open your terminal in your computer and paste the SSH command (make you sure your key pair is saved in same folder as your local user in your computer).
 
-* Click `Yes` to continue then click Enter.
+4. Click `Yes` to continue then click Enter.
 
 ![terminal](https://github.com/user-attachments/assets/9db2dd0e-4874-4ff4-9fed-8ed1260da6a2)
 
 
+## <a name="install-apache">➡️ Step 4 - Install Apache on Amazon Linux 2 AMI</a>
 
 
 
