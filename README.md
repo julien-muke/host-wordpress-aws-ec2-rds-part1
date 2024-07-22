@@ -22,13 +22,12 @@ The procedure for deploying this architecture on AWS consists of the following s
 * Step 2. [Connect to EC2 instance via Instance connect](#connect-ec2-to-instance)
 * Step 3. [Connect to EC2 instance via SSH client (local Terminal)](#connect-ec2-to-ssh)
 * Step 4. [Install Apache on Amazon Linux 2](#install-apache)
-* Step 5. [Install PHP on Amazon Linux 2](#install-php)
-* Step 6. [Install MariaDB on Amazon Linux 2](#instance-mariadb)
-* Step 7. [Download the latest WordPress zip file](#download-wordpress)
-* Step 8. [Database option on AWS for WordPress website](#wp-database)
-* Step 9. [Create RDS instance for WordPress website](#rds-wp)
-* Step 10. [Connect RDS and EC2 instance](#connect-rds-ec2)
-* Step 11. [WordPress Installation on Amazon Linux 2 EC2 instance](#install-wp-on-ec2)
+* Step 5. [Install PHP & MariaDB on Amazon Linux 2](#install-php-mariadb)
+* Step 6. [Download the latest WordPress zip file](#download-wordpress)
+* Step 7. [Database option on AWS for WordPress website](#wp-database)
+* Step 8. [Create RDS instance for WordPress website](#rds-wp)
+* Step 9. [Connect RDS and EC2 instance](#connect-rds-ec2)
+* Step 10. [WordPress Installation on Amazon Linux 2 EC2 instance](#install-wp-on-ec2)
 
 ## <a name="create-ec2-for-wordpress">➡️ Step 1 - Create EC2 for WordPress</a>
 
@@ -139,7 +138,18 @@ To test it, go back to your EC2 console, copy the public IP of your EC2 instance
 ![apache](https://github.com/user-attachments/assets/c5348565-3c93-4f56-a45f-f55461c87a8b)
 
 
+## <a name="install-php-mariadb">➡️ Step 5 - Install PHP & MariaDB on Amazon Linux 2</a>
 
+By running this command, you install PHP 8.2 on your Amazon Linux system.
 
+```bash
+sudo amazon-linux-extras install php8.2 -y
+```
+
+Next, let's install MariaDB, by running following command, you install MariaDB 10.5, which is a popular open-source relational database management system, on your Amazon Linux system.
+
+```bash
+sudo amazon-linux-extras install mariadb10.5 -y
+```
 
 
