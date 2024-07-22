@@ -100,7 +100,8 @@ Note: There is another way to Connect to EC2 instance which is via SSH client, l
 * Select the instance, and choose Connect button.
 * Choose `SSH client`, copy the SSH command to connect to EC2 instance, and paste it into your terminal.
 
-![ssh](https://github.com/user-attachments/assets/3fd7a268-f55b-4670-afa9-a3953e8d6d26)
+![ssh](https://github.com/user-attachments/assets/f6b17555-1de0-46ac-bb9b-ae926a941d96)
+
 
 * Open your terminal in your computer and paste the SSH command (make you sure your key pair is saved in same folder as your local user in your computer).
 
