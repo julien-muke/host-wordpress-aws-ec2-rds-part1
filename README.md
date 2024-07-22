@@ -22,13 +22,13 @@ The procedure for deploying this architecture on AWS consists of the following s
 * Step 2. [Connect to EC2 instance via Instance connect](#connect-ec2-to-instance)
 * Step 3. [Connect to EC2 instance via SSH client (local Terminal)](#connect-ec2-to-ssh)
 * Step 4. [Install Apache on Amazon Linux 2](#install-apache)
-* [Install PHP on Amazon Linux 2](install-php)
-* [Install MariaDB on Amazon Linux 2](instance-mariadb)
-* [Download the latest WordPress zip file](download-wordpress)
-* [Database option on AWS for WordPress website](wp-database)
-* [Create RDS instance for WordPress website](rds-wp)
-* [Connect RDS and EC2 instance](connect-rds-ec2)
-* [WordPress Installation on Amazon Linux 2 EC2 instance](install-wp-on-ec2)
+* Step 5. [Install PHP on Amazon Linux 2](#install-php)
+* Step 6. [Install MariaDB on Amazon Linux 2](#instance-mariadb)
+* Step 7. [Download the latest WordPress zip file](#download-wordpress)
+* Step 8. [Database option on AWS for WordPress website](#wp-database)
+* Step 9. [Create RDS instance for WordPress website](#rds-wp)
+* Step 10. [Connect RDS and EC2 instance](#connect-rds-ec2)
+* Step 11. [WordPress Installation on Amazon Linux 2 EC2 instance](#install-wp-on-ec2)
 
 ## <a name="create-ec2-for-wordpress">➡️ Step 1 - Create EC2 for WordPress</a>
 
@@ -112,8 +112,31 @@ There is another way to Connect to EC2 instance which is via SSH client, local T
 ![terminal](https://github.com/user-attachments/assets/9db2dd0e-4874-4ff4-9fed-8ed1260da6a2)
 
 
-## <a name="install-apache">➡️ Step 4 - Install Apache on Amazon Linux 2 AMI</a>
+## <a name="install-apache">➡️ Step 4 - Install Apache on Amazon Linux 2</a>
 
+We will run following command to ensure that all packages on the system are up-to-date with the latest patches and versions.
+
+```bash
+sudo yum update -y
+```
+
+By running the following command, you install the Apache web server on your system, which can then be used to host websites and serve web content.
+
+```bash
+sudo yum install -y httpd
+```
+
+Let's start the Apache HTTP Server service by running the following command, By running this command, you initiate the Apache web server, enabling it to begin serving web content.
+
+```bash
+sudo service httpd start
+```
+
+To test it, go back to your EC2 console, copy the public IP of your EC2 instance and paste it in your browser.
+
+![ec2-apache](https://github.com/user-attachments/assets/8f015343-36a2-49a2-8e67-c96c15bce417)
+
+![apache](https://github.com/user-attachments/assets/c5348565-3c93-4f56-a45f-f55461c87a8b)
 
 
 
