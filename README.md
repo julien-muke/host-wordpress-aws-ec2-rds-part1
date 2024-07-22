@@ -69,5 +69,14 @@ Note: If you choose Proceed without a key pair (Not recommended), you won't be a
 
 ![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-16-17_28_49 copy 2](https://github.com/user-attachments/assets/215d34c6-b973-4428-95fb-229ebcc3c3aa)
 
+12. Under Inbound Security Group Rules, let's add two more rules:
+* The first one is `HTTP` Rule and allow it from `anywhere`, everyone can make HTTP request to  the server.
+* The second one is `HPPTS` Rule and allow it from `anywhere`, everyone can make HTTPS request to  the server.
+
+![screencapture-us-east-1-console-aws-amazon-ec2-home-2024-07-16-17_28_49 copy 3](https://github.com/user-attachments/assets/0044974a-25ff-4329-8647-a236a04391ad)
+
+
+13. For the storage you can get 30 GB under free tier, i will just keep it 15 GB which is sufficient and click on launch instance.
+
 
 
