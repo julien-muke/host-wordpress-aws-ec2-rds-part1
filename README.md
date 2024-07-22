@@ -78,5 +78,25 @@ Note: If you choose Proceed without a key pair (Not recommended), you won't be a
 
 13. For the storage you can get 30 GB under free tier, i will just keep it 15 GB which is sufficient and click on launch instance.
 
+![Screenshot 2024-07-22 at 13 42 19](https://github.com/user-attachments/assets/1c9c495a-62cd-4044-9269-471fb376951e)
+
+
+## <a name="Connect to EC2 instance via Instance connect">➡️ connect-ec2-to-instance</a>
+
+1. After the instance is created and its on the running state, choose instance ID, and click on Connect button. 
+
+![connect-ec2](https://github.com/user-attachments/assets/7a03613e-2f50-4aff-b791-0e7070d3527e)
+
+2. Under EC2 Instance Connect, click Connect
+
+![connectec2-2](https://github.com/user-attachments/assets/336529a0-4913-438a-915e-036213536d49)
+
+3. if you see the welcome message from the AWS command line, then you are successfully connected to the server.
+
+![aws-command-line](https://github.com/user-attachments/assets/23070b03-c9a6-4b16-ad84-d9097d0a5444)
+
+
+
+
 
 
