@@ -24,10 +24,9 @@ The procedure for deploying this architecture on AWS consists of the following s
 * Step 4. [Install Apache on Amazon Linux 2](#install-apache)
 * Step 5. [Install PHP & MariaDB on Amazon Linux 2](#install-php-mariadb)
 * Step 6. [Download the latest WordPress zip file](#download-wordpress)
-* Step 7. [Database option on AWS for WordPress website](#wp-database)
-* Step 8. [Create RDS instance for WordPress website](#rds-wp)
-* Step 9. [Connect RDS and EC2 instance](#connect-rds-ec2)
-* Step 10. [WordPress Installation on Amazon Linux 2 EC2 instance](#install-wp-on-ec2)
+* Step 7. [Create RDS instance for WordPress website](#rds-wp)
+* Step 8. [Connect RDS and EC2 instance](#connect-rds-ec2)
+* Step 9. [WordPress Installation on Amazon Linux 2 EC2 instance](#install-wp-on-ec2)
 
 ## <a name="create-ec2-for-wordpress">➡️ Step 1 - Create EC2 for WordPress</a>
 
@@ -185,3 +184,24 @@ After the wordpress is download, run `ls` to see the wordpress file `latest.tar.
 
 
 
+## <a name="rds-wp">➡️ Step 7 - Create RDS instance for WordPress website</a>
+
+
+WordPress needs a database to run properly, we need to create a database before we the installation of WordPress. 
+
+Note: For the database you have two options:
+* Option 1. You can create a database locally on EC2 instance and connect it locally via local host.
+* Option 2. You can create RDS instance and host your database on it (it's recommend to keep the database separate on RDS instance for durability and security reasons).
+
+Amazon RDS DB instances simplify the deployment and management of relational databases, enabling you to focus on your application development and business logic rather than database maintenance tasks.
+
+To create a DB instance:
+
+ 1. Sign in to the AWS Management Console and open the Amazon RDS console at https://console.aws.amazon.com/rds/.
+ 2. In the upper-right corner of the Amazon RDS console, choose the AWS Region in which you want to create the DB instance. (make sure your AWS Region is the same as your EC2 instance).
+ 3. In the navigation pane, choose Databases.
+ 4. Choose Create database, then choose Standard create.
+ 5. For Engine type, choose MySQL.
+ 6. For Version, choose the engine version.
+
+ ![RDS-us-east-1](https://github.com/user-attachments/assets/bc2a208b-847b-4b3e-a2e9-40c62b3c305c)
