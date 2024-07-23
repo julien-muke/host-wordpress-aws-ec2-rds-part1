@@ -247,3 +247,62 @@ Note: Based on the options we selected you can see estimated monthly cost, the A
 21. It will take about 2 to 5 minutes to create the database, once you see status is `available` click on **view connection details** to see  RS credentials, copy host username and password of the database somewhere safe as you will needed for database connection from our EC2 instance.
 
 ![RDS](https://github.com/user-attachments/assets/acd614fd-280b-405b-b938-aa630e846009)
+
+
+
+## <a name="connect-rds-ec2">➡️ Step 8 - Connect RDS and EC2 instance</a>
+
+In this sttep, we need to add an inbound rule to RDS Security Group to allow connect to RDS, it's to make sure we can access database from our EC2 instance. 
+
+* Open RDS and go to Security Group, we can see inbound is only allowed from one IP.
+
+![sg1](https://github.com/user-attachments/assets/681d3645-8ce2-49bd-8486-e7ad7e7da3ad)
+
+* We have created two security groups, one for EC2 and one for RDS instance.
+* Copy Security Group ID of EC2 instance `wp-security-group`, select RDS Security Group `rds-sg`, select inbound rules and click on EDIT inbound rules.
+
+![indound-rule](https://github.com/user-attachments/assets/d3f131b8-e73f-419e-9729-0ccbc7ed405f)
+
+* we will add rule, select type `MYSOL/Aurora`, Port is auto selected, then paste the ID of EC2 Security Group and add description click on Save rules.
+
+
+![indound-rule-2](https://github.com/user-attachments/assets/71e56576-b189-4714-a0c6-d9ace515983d)
+
+
+**Now let's check if these rules are workingopen** 
+
+* EC2 instance dashboard and click on connect. 
+* we will just use EC2 instance connect method.
+
+![ec2-connect](https://github.com/user-attachments/assets/18f12bac-e1e2-4f45-8f7a-b68bd9432e1d)
+
+
+* To quickly verify the connection to database, run the following command:
+
+In my case:
+
+```bash
+mysql -h wp-database.cr2g2a04mnil.us-east-l.rds.amazonaws.com -u admin -p
+```
+
+In you case (get from connection details to your database wp-database):
+
+```bash
+mysql -h wp-database.YOUR-ENDPOINT -u YOUR-USERNAME -p YOUR-PASSWORD
+```
+Note: Whenever you are typing your password, will not see it writing any text this is  
+a Linux security feature, just paste your password hit Enter.  
+
+* If you see welcome message and my SQL terminal  then you are successfully able to connect to RDS instance.
+* To check if the database is created run the following command
+
+```bash
+ show databases;
+ ```
+
+ * As we can see below `wp_database` is already present, i have successfully connect our database. 
+
+
+![cmd](https://github.com/user-attachments/assets/184ef34a-1a45-4f2d-a28d-bc04d6d476c0)
+
+ Next we  can start the process of Wordpress installation.
