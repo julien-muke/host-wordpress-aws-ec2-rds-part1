@@ -405,6 +405,12 @@ As you can see below we have the WordPress Welcome Page
 
 * It will open the WordPress Admin Panel to manage contents of your website.
 
+![wp4](https://github.com/user-attachments/assets/149d1f31-b95f-4937-a3df-34e403caa48c)
+
+* Click on visit site to open your newly created WordPress sample site.
+
+![wp5](https://github.com/user-attachments/assets/426ee816-fe52-4c83-a4a6-0e8401fa1e2f)
+
 
 
 
