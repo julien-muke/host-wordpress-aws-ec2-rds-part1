@@ -332,4 +332,35 @@ sudo chown -R ec2-user:apache /var/www
 sudo chmod 2775 /var/www && find /var/www -type d -exec sudo chmod 2775 {} \;
 ```
 
-4. 
+4. The following command is used in a Unix-like operating system (such as Linux) to change the permissions of all files within the /var/www directory. The command finds all files within the `/var/www` directory and sets their permissions to `0664`.
+
+```bash
+find /var/www -type f -exec sudo chmod 0664 {} \;
+```
+
+5.  Let's move to HTML folder by running
+
+```bash
+cd /var/www/html
+```
+
+6. As we can see below, we have `wp-config-sample.php` file, we will create a copy of this file and name it `wp-config.php`.  This file contains configuration of WordPress website.
+
+
+![cmd4](https://github.com/user-attachments/assets/3b164752-b00b-4708-b4f5-152bc8681126)
+
+7. Now let's edit `wp-config.php` file by running `nano wp-config.php`
+
+* On the `wp-config.php` we need to change database parameters so WordPress can connect to our database
+* Enter your database name, username and password, then paste host of the RDS instance as shown below.
+* Once you are done editing hit Control + X to exit.
+
+![edit-rds](https://github.com/user-attachments/assets/89e6eb41-5746-4291-bf7f-8d1a69c9f7a7)
+
+* To check the changes we made run the command `cat wp-config.php`. As you can see below our file is modified with our database information.
+
+![edit-rds2](https://github.com/user-attachments/assets/7e2546b2-431f-458b-b83e-345233c1e748)
+
+* 
+
+
