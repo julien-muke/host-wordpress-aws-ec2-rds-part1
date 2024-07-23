@@ -205,3 +205,45 @@ To create a DB instance:
  6. For Version, choose the engine version.
 
  ![RDS-us-east-1](https://github.com/user-attachments/assets/bc2a208b-847b-4b3e-a2e9-40c62b3c305c)
+
+7. Select Free Tier so we don't get unexpected  monthly bill for our database instance.
+
+![RDS-us-east-1 copy](https://github.com/user-attachments/assets/dad49041-fb77-407a-8088-9b0d2e6b21c2)
+
+8. Type a name for your DB instance `wp-database`
+9. Type a login ID for the master user of your DB instance `admin`
+10. Ender Credentials management, select `Self managed` to create your own password or have RDS create a password
+that you manage.
+11. Choose `Auto generate password` Amazon RDS can generate a password for you, or you can specify your own password.
+12. For Instance confiquration, select `db.t3.micro`
+
+![RDS-us-east-1 copy 2](https://github.com/user-attachments/assets/35cb92e1-30dc-46ed-9f6b-007c25db7bcc)
+
+13. For the Allocated storage, enter the minimum value of `20 GiB`
+
+![RDS-us-east-1 copy 3](https://github.com/user-attachments/assets/e2d06e5d-d3b1-4507-af98-92548eefffd6)
+
+
+14. In the Connectivity section, make sure to select same VPC as of your EC2 instance and default submit group.
+15. For Public Access we want to keep it private for security select `No`
+16. In the Connectivity section under VPC security group (firewall), if you select Create new, a VPC security group is created with an inbound rule that allows your local computer's IP address to access the database. Enter VPC security group name `rds-sg`
+
+![RDS-us-east-1 copy 4](https://github.com/user-attachments/assets/24df58e2-4902-4622-bad8-6c12991375c1)
+
+17. Enter initial database name `wp_database`
+18. It's a good practice to encrypt your RDS instance I will select default key.
+
+![RDS-us-east-1 copy 5](https://github.com/user-attachments/assets/114cbb9e-3faa-41e7-bc37-15f2566731f4)
+
+Note: AWS provide automated Backup Service which is additional cost. Once you are in production, it's recommend to use it, you can keep database backup up to last 35 days but for this demo I will disable Backup.
+
+19. Enable deletion protection so it can protect your instance from accidental deletion.
+20. Click Create database.
+
+Note: Based on the options we selected you can see estimated monthly cost, the Amazon RDS Free Tier is available to you for 12 months. Each calendar month, the free tier will allow you to use the Amazon RDS resources listed below for free:
+
+![RDS-us-east-1 copy 6](https://github.com/user-attachments/assets/239e1adc-a372-4a63-adda-cccfb664e523)
+
+21. It will take about 2 to 5 minutes to create the database, once you see status is `available` click on **view connection details** to see  RS credentials, copy host username and password of the database somewhere safe as you will needed for database connection from our EC2 instance.
+
+![RDS](https://github.com/user-attachments/assets/acd614fd-280b-405b-b938-aa630e846009)
