@@ -290,8 +290,7 @@ In you case (get from connection details to your database wp-database):
 ```bash
 mysql -h wp-database.YOUR-ENDPOINT -u YOUR-USERNAME -p YOUR-PASSWORD
 ```
-Note: Whenever you are typing your password, will not see it writing any text this is  
-a Linux security feature, just paste your password hit Enter.  
+Note: Whenever you are typing your password, will not see it writing any text this is a Linux security feature, just paste your password hit Enter.  
 
 * If you see welcome message and my SQL terminal  then you are successfully able to connect to RDS instance.
 * To check if the database is created run the following command
@@ -300,9 +299,37 @@ a Linux security feature, just paste your password hit Enter.
  show databases;
  ```
 
- * As we can see below `wp_database` is already present, i have successfully connect our database. 
+ * As we can see below `wp_database` is already present, we have successfully connect our database. 
 
 
 ![cmd](https://github.com/user-attachments/assets/184ef34a-1a45-4f2d-a28d-bc04d6d476c0)
 
  Next we  can start the process of Wordpress installation.
+
+
+## <a name="install-wp-on-ec2">➡️ Step 9 - WordPress Installation on Amazon Linux 2 EC2 instance</a>
+
+To install WordPresson on Amazon Linux 2 EC2 instance:
+
+1. The following command copies all files and subdirectories from the wordpress directory to the `/var/www/html/` directory, using superuser privileges to ensure the operation has the necessary permissions. This is typically used when setting up a WordPress website on a web server.
+
+
+```bash
+sudo cp -r wordpress/* /var/www/html/
+```
+
+2. By running the following command, you changes the ownership of the `/var/www` directory and all its contents to the user ec2-user and the group apache. This is often done to ensure that the `ec2-user` has the necessary permissions to manage web files and that the apache group has the appropriate access to these files, facilitating web server operations.
+
+
+```bash
+sudo chown -R ec2-user:apache /var/www
+```
+
+3. The following command is typically used in web server environments to ensure proper permissions for web server processes and users, facilitating collaboration and proper access control.
+
+
+```bash
+sudo chmod 2775 /var/www && find /var/www -type d -exec sudo chmod 2775 {} \;
+```
+
+4. 
