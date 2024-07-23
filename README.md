@@ -361,6 +361,51 @@ cd /var/www/html
 
 ![edit-rds2](https://github.com/user-attachments/assets/7e2546b2-431f-458b-b83e-345233c1e748)
 
-* 
+* Next, we need to allow WordPress to use permalinks in Apache server, we will edit a parameter in Apache configuration file.
+To do that, we need to use the following command to open config file in VIM Editor.
+
+```bash
+sudo vim /etc/httpd/conf/httpd.conf
+```
+
+* Change the `AllowOverride None` to `AllowOverride All`
+
+Note: To type in VIM Editor, first press `i` key to get into insert mode, then you can  
+type when you want, to quit from VIM Editor press `Escape(Esc)` key then write `:wq` and press Enter.
+
+
+![edit-rds3](https://github.com/user-attachments/assets/c6d3d20b-ddda-4aad-b401-3f4c2247282b)
+
+* To make sure everything is saved and new settings are applied, we need to restart Apache server with restart command:
+
+```bash
+sudo systemctl restart httpd
+```
+
+* Go back EC2 instance console, and click on public IP of the instance.
+
+Note: If you click on the public IP link, sometimes you might get the error connection, that is not an actual server error that is your browser doing `https` request rather than `http` request, just remove s at the end and press enter.
+
+![ip](https://github.com/user-attachments/assets/ae13aa35-6eb2-4d34-8311-08ae8895d8d3)
+
+As you can see below we have the WordPress Welcome Page
+
+* Fill in the information, enter your Site Title, Username, Password and Your Email, then click Install WordPress.
+
+![wp1](https://github.com/user-attachments/assets/e071afd2-b211-496f-a299-7bcbeb602217)
+
+
+* Now you have successfully installed WordPress on your server.
+
+![wp2](https://github.com/user-attachments/assets/cbc58b58-ef46-4e57-b277-c7b510c6fd14)
+
+* To login enter your email and password and click on login.
+
+![wp3](https://github.com/user-attachments/assets/d562bc2d-a17c-4d84-9ec5-b5e89cebf604)
+
+* It will open the WordPress Admin Panel to manage contents of your website.
+
+
+
 
 
