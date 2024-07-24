@@ -3,9 +3,9 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-In this step-by-step tutorial, we guide you through the process of creating an EC2 instance, demonstrating how to effortlessly connect to it and install essential packages like Apache, MariaDB, and more. 
+Deploying a WordPress website on AWS involves leveraging various AWS services to ensure scalability, reliability, and security. In this guide, we will walk you through the process of setting up a WordPress site using Amazon EC2 for hosting, Amazon RDS for database management, and Amazon Application Load Balancer (ALB) for efficient traffic distribution.
 
-Learn how setup an RDS instance, establishing a seamless connection between your EC2 and RDS, and finally, installing WordPress for a fully functional website. 
+Additionally, we will utilize Amazon Route 53 for domain name management and DNS routing. This comprehensive approach not only simplifies the deployment process but also equips your WordPress site with the robust infrastructure needed to handle varying levels of traffic, ensuring optimal performance and uptime.
 
 
 ## <a name="design">📐 Architecture Diagram</a>
