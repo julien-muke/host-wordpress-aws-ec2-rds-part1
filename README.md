@@ -29,13 +29,7 @@ Deploying a WordPress website on AWS involves leveraging various AWS services to
 Additionally, we will utilize Amazon Route 53 for domain name management and DNS routing. This comprehensive approach not only simplifies the deployment process but also equips your WordPress site with the robust infrastructure needed to handle varying levels of traffic, ensuring optimal performance and uptime.
 
 
-## <a name="design">📐 Architecture Diagram</a>
-
-
-
-
-
-## Architecture Diagram Overview
+## 📐 Architecture Diagram Overview
 
 * Users will request to open WordPress website, that request will be received by Route 53 which is a domain Management Service in AWS.
 * We will use Route 53 to host DNS entries of the website's domain.
@@ -44,6 +38,15 @@ Additionally, we will utilize Amazon Route 53 for domain name management and DNS
 * EC2 instance is a virtual server where we will install all the needed packages to run WordPress  and create files of our WordPress website.
 * We will make EC2 and RDS accessible to public source and enforce security via Security Group rules.
 * We will create an EC2 instance which will be our Virtual Server and RDS instance which will be used for Database Hosting.
+
+## <a name="tech-stack">⚙️ Tech Stack</a>
+
+- Amazon EC2
+- Amazon Application Load Balancer (ALB)
+- Amazon RDS
+- Amazon Route 53
+- AWS Certificate Manager
+- WordPress
 
 
 ## <a name="steps">☑️ Steps</a>
