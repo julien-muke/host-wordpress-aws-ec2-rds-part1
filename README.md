@@ -1,6 +1,17 @@
 # ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263) How to Deploy WordPress Website on AWS using EC2, RDS, ALB and more (Part1).
 
 
+![Blank diagram-19](https://github.com/user-attachments/assets/1d4fa91d-2efd-46f8-b8c4-bbd834f4dbfc)
+
+<div align="center">
+
+<h3 align="center">How to Deploy WordPress Website on AWS using EC2</h3>
+
+   <div align="center">
+     Build this hands-on demo step by step with my detailed tutorial on <a href="http://www.youtube.com/@julienmuke/videos" target="_blank"><b>Julien Muke</b></a> YouTube. Feel free to subscribe 🔔!
+    </div>
+</div>
+
 ## <a name="introduction">🤖 Introduction</a>
 
 Deploying a WordPress website on AWS involves leveraging various AWS services to ensure scalability, reliability, and security. In this guide, we will walk you through the process of setting up a WordPress site using Amazon EC2 for hosting, Amazon RDS for database management, and Amazon Application Load Balancer (ALB) for efficient traffic distribution.
@@ -11,7 +22,7 @@ Additionally, we will utilize Amazon Route 53 for domain name management and DNS
 ## <a name="design">📐 Architecture Diagram</a>
 
 
-![Blank diagram-19](https://github.com/user-attachments/assets/1d4fa91d-2efd-46f8-b8c4-bbd834f4dbfc)
+
 
 
 ## Architecture Diagram Overview
