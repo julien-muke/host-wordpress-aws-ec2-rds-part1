@@ -442,10 +442,6 @@ As you can see below we have the WordPress Welcome Page
 
 ![wp4](https://github.com/user-attachments/assets/149d1f31-b95f-4937-a3df-34e403caa48c)
 
-* Click on visit site to open your newly created WordPress sample site.
-
-![wp5](https://github.com/user-attachments/assets/426ee816-fe52-4c83-a4a6-0e8401fa1e2f)
-
 
 In conclusion, deploying a WordPress website on AWS using EC2, RDS and other AWS services provides a highly scalable, reliable, and secure solution for hosting your website. By following the steps outlined in this guide, you have set up a robust infrastructure that can efficiently handle traffic fluctuations, ensure data integrity, and deliver a seamless user experience. 
 
