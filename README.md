@@ -5,6 +5,12 @@
 
 <div align="center">
 
+  <br />
+    <a href="https://youtu.be/FF7nJH2NeJc?si=OeDYVkMRR9174xHP" target="_blank">
+      <img src="https://github.com/user-attachments/assets/1d4fa91d-2efd-46f8-b8c4-bbd834f4dbfc" alt="Project Banner">
+    </a>
+  <br />
+
 <h3 align="center">How to Deploy WordPress Website on AWS using EC2</h3>
 
    <div align="center">
