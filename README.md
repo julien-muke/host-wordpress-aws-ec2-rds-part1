@@ -1,8 +1,5 @@
 # ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263) How to Deploy WordPress Website on AWS using EC2, RDS, ALB and more (Part1).
 
-
-![Blank diagram-19](https://github.com/user-attachments/assets/1d4fa91d-2efd-46f8-b8c4-bbd834f4dbfc)
-
 <div align="center">
 
   <br />
@@ -26,7 +23,7 @@ channel, <a href="http://www.youtube.com/@julienmuke/videos" target="_blank"><b>
 If you prefer visual learning, this is the perfect resource for you. Follow my tutorial to learn how to build projects
 like these step-by-step in a beginner-friendly manner!
 
-<a href="https://youtu.be/HcqDrF-k7bc?si=vc-ViXgOG4B7IOEl?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+<a href="https://youtu.be/FF7nJH2NeJc?si=F1tzYZpLitTtUOLT" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
 
 ## <a name="introduction">🤖 Introduction</a>
 
