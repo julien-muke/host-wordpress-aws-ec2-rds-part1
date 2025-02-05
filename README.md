@@ -353,38 +353,44 @@ To install WordPresson on Amazon Linux 2 EC2 instance:
 sudo cp -r wordpress/* /var/www/html/
 ```
 
-2. By running the following command, you changes the ownership of the `/var/www` directory and all its contents to the user ec2-user and the group apache. This is often done to ensure that the `ec2-user` has the necessary permissions to manage web files and that the apache group has the appropriate access to these files, facilitating web server operations.
+2. Run the following command to add the `ec2-user` to the apache group on a Linux system.
+
+```bash
+sudo usermod -a -G apache ec2-user
+```
+
+3. By running the following command, you changes the ownership of the `/var/www` directory and all its contents to the user ec2-user and the group apache. This is often done to ensure that the `ec2-user` has the necessary permissions to manage web files and that the apache group has the appropriate access to these files, facilitating web server operations.
 
 
 ```bash
 sudo chown -R ec2-user:apache /var/www
 ```
 
-3. The following command is typically used in web server environments to ensure proper permissions for web server processes and users, facilitating collaboration and proper access control.
+4. The following command is typically used in web server environments to ensure proper permissions for web server processes and users, facilitating collaboration and proper access control.
 
 
 ```bash
 sudo chmod 2775 /var/www && find /var/www -type d -exec sudo chmod 2775 {} \;
 ```
 
-4. The following command is used in a Unix-like operating system (such as Linux) to change the permissions of all files within the /var/www directory. The command finds all files within the `/var/www` directory and sets their permissions to `0664`.
+5. The following command is used in a Unix-like operating system (such as Linux) to change the permissions of all files within the /var/www directory. The command finds all files within the `/var/www` directory and sets their permissions to `0664`.
 
 ```bash
 find /var/www -type f -exec sudo chmod 0664 {} \;
 ```
 
-5.  Let's move to HTML folder by running
+6.  Let's move to HTML folder by running
 
 ```bash
 cd /var/www/html
 ```
 
-6. As we can see below, we have `wp-config-sample.php` file, we will create a copy of this file and name it `wp-config.php`.  This file contains configuration of WordPress website.
+7. As we can see below, we have `wp-config-sample.php` file, we will create a copy of this file and name it `wp-config.php`.  This file contains configuration of WordPress website.
 
 
 ![cmd4](https://github.com/user-attachments/assets/3b164752-b00b-4708-b4f5-152bc8681126)
 
-7. Now let's edit `wp-config.php` file by running `nano wp-config.php`
+8. Now let's edit `wp-config.php` file by running `nano wp-config.php`
 
 * On the `wp-config.php` we need to change database parameters so WordPress can connect to our database
 * Enter your database name, username and password, then paste host of the RDS instance as shown below.
