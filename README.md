@@ -454,6 +454,8 @@ As you can see below we have the WordPress Welcome Page
 
 In conclusion, deploying a WordPress website on AWS using EC2, RDS and other AWS services provides a highly scalable, reliable, and secure solution for hosting your website. By following the steps outlined in this guide, you have set up a robust infrastructure that can efficiently handle traffic fluctuations, ensure data integrity, and deliver a seamless user experience. 
 
+STAY TUNED FOR PART 2
+
 ## 💰 Cost
 
 All services used are eligible for the AWS Free Tier. However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
